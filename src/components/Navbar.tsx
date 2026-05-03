@@ -15,9 +15,9 @@ const links = [
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/70 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <nav className="container flex h-16 items-center justify-between">
-        <a href="#" className="font-mono text-sm font-semibold tracking-tight">
+        <a href="#" className="font-mono text-sm font-semibold tracking-tight text-foreground/90">
           &lt;dev/&gt;
         </a>
         <ul className="hidden items-center gap-8 md:flex">
@@ -25,7 +25,7 @@ export const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-sm text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-foreground after:transition-all hover:after:w-full"
+                className="relative text-sm text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
               </a>
@@ -35,7 +35,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <button
-            className="md:hidden"
+            className="rounded-md p-2 transition-colors hover:bg-accent md:hidden"
             onClick={() => setOpen((o) => !o)}
             aria-label="Toggle menu"
           >
@@ -50,7 +50,7 @@ export const Navbar = () => {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground"
+                className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
               >
                 {l.label}
               </a>

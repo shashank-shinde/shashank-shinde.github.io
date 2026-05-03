@@ -8,33 +8,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 25% 96%;
-    --foreground: 215 30% 12%;
+    --background: 220 22% 97%;
+    --foreground: 224 30% 10%;
 
-    --card: 210 20% 99%;
-    --card-foreground: 215 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 30% 10%;
 
-    --popover: 210 20% 99%;
-    --popover-foreground: 215 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 30% 10%;
 
-    --primary: 198 85% 38%;
+    --primary: 222 84% 56%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 26% 94%;
+    --secondary-foreground: 224 30% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 25% 94%;
+    --muted-foreground: 220 14% 40%;
 
-    --accent: 198 85% 92%;
-    --accent-foreground: 198 85% 25%;
+    --accent: 221 90% 95%;
+    --accent-foreground: 222 74% 42%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 198 85% 38%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 222 84% 56%;
 
     --radius: 0.5rem;
 
@@ -56,33 +56,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 30% 7%;
+    --background: 226 35% 7%;
     --foreground: 210 40% 96%;
 
-    --card: 220 28% 10%;
+    --card: 224 30% 11%;
     --card-foreground: 210 40% 96%;
 
-    --popover: 220 28% 10%;
+    --popover: 224 30% 11%;
     --popover-foreground: 210 40% 96%;
 
-    --primary: 198 90% 55%;
-    --primary-foreground: 220 30% 8%;
+    --primary: 221 92% 68%;
+    --primary-foreground: 226 35% 8%;
 
-    --secondary: 220 25% 15%;
+    --secondary: 224 23% 16%;
     --secondary-foreground: 210 40% 96%;
 
-    --muted: 220 25% 14%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 224 22% 14%;
+    --muted-foreground: 216 18% 68%;
 
-    --accent: 198 60% 18%;
-    --accent-foreground: 198 90% 75%;
+    --accent: 223 56% 19%;
+    --accent-foreground: 222 95% 80%;
 
     --destructive: 0 62.8% 45%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 22% 18%;
-    --input: 220 22% 18%;
-    --ring: 198 90% 55%;
+    --border: 224 18% 21%;
+    --input: 224 18% 21%;
+    --ring: 221 92% 68%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +100,15 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at 10% 0%, hsl(var(--primary) / 0.12), transparent 35%),
+      radial-gradient(circle at 85% 15%, hsl(var(--primary) / 0.08), transparent 30%);
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.28);
+    color: hsl(var(--foreground));
   }
 }
