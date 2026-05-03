@@ -1,17 +1,58 @@
-import { ArrowDown, Download, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Cloud, GitBranch, Palette, Terminal, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 
+const skills = [
+  { name: "Frontend", icon: Code2, items: "React, Next.js, TypeScript, Tailwind" },
+  { name: "Backend", icon: Server, items: "Node.js, Express, NestJS, tRPC" },
+  { name: "Databases", icon: Database, items: "Postgres, MongoDB, Redis, Prisma" },
+  { name: "DevOps", icon: Cloud, items: "AWS, Docker, CI/CD, Vercel" },
+  { name: "Tools", icon: GitBranch, items: "Git, GitHub Actions, Jest, Vitest" },
+  { name: "Design", icon: Palette, items: "Figma, Design Systems, A11y" },
+  { name: "APIs", icon: Layers, items: "REST, GraphQL, WebSockets" },
+  { name: "Scripting", icon: Terminal, items: "Bash, Python, Automation" },
+];
+
 const projects = [
-  { name: "TaskFlow", desc: "Real-time collaborative task manager with WebSockets.", stack: "React · Node · Postgres", link: "#" },
-  { name: "DevNotes", desc: "Markdown-first note app with full-text search.", stack: "Next.js · Prisma · tRPC", link: "#" },
-  { name: "ShopLite", desc: "Headless e-commerce starter with Stripe checkout.", stack: "Remix · Stripe · Tailwind", link: "#" },
+  {
+    name: "TaskFlow",
+    desc: "Real-time collaborative task manager built for remote teams. Features live cursors, optimistic updates, drag-and-drop boards, and offline sync via service workers. Scaled to 10k concurrent users with WebSocket fan-out.",
+    stack: "React · Node · Postgres · Redis",
+    link: "#",
+  },
+  {
+    name: "DevNotes",
+    desc: "Markdown-first knowledge base with full-text Postgres search, bi-directional links, and a plugin system. Includes a CLI for local-first editing and Git-backed sync across devices.",
+    stack: "Next.js · Prisma · tRPC · Meilisearch",
+    link: "#",
+  },
+  {
+    name: "ShopLite",
+    desc: "Headless e-commerce starter with Stripe checkout, multi-currency support, and a customizable storefront. Ships with a CMS-ready product schema and edge-rendered product pages for sub-100ms TTFB.",
+    stack: "Remix · Stripe · Tailwind · Sanity",
+    link: "#",
+  },
 ];
 
 const experience = [
-  { role: "Senior Full Stack Developer", company: "Acme Corp", period: "2023 — Present", desc: "Leading a team building scalable SaaS products with React and Node." },
-  { role: "Full Stack Developer", company: "Northwind Labs", period: "2021 — 2023", desc: "Shipped customer-facing dashboards and internal tooling." },
-  { role: "Software Engineer Intern", company: "Initech", period: "2020 — 2021", desc: "Built REST APIs and contributed to design system." },
+  {
+    role: "Senior Full Stack Developer",
+    company: "Acme Corp",
+    period: "2023 — Present",
+    desc: "Leading a team of 6 engineers building a multi-tenant SaaS analytics platform. Architected the migration from a monolith to event-driven microservices, cutting p95 latency by 40%. Mentor junior devs and own the frontend performance and accessibility roadmap.",
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Northwind Labs",
+    period: "2021 — 2023",
+    desc: "Shipped customer-facing dashboards used by 50k+ monthly users and built the internal admin tooling that powers customer support. Introduced a shared design system in Storybook and led the adoption of TypeScript across the codebase.",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Initech",
+    period: "2020 — 2021",
+    desc: "Built REST APIs in Node.js for the billing service and contributed reusable React components to the company design system. Wrote integration tests that lifted coverage from 45% to 80% on the core checkout flow.",
+  },
 ];
 
 const education = [
@@ -72,6 +113,26 @@ const Index = () => {
               ))}
             </ul>
           </div>
+        </div>
+      </Section>
+
+      <Section id="skills" title="Skills">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {skills.map((s) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={s.name}
+                className="group rounded-lg border border-border p-5 transition-all hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_8px_30px_-10px_hsl(var(--primary)/0.4)]"
+              >
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent text-primary transition-transform group-hover:scale-110">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="font-semibold">{s.name}</h3>
+                <p className="mt-1 text-xs text-muted-foreground">{s.items}</p>
+              </div>
+            );
+          })}
         </div>
       </Section>
 
