@@ -116,6 +116,26 @@ const Index = () => {
         </div>
       </Section>
 
+      <Section id="skills" title="Skills">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {skills.map((s) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={s.name}
+                className="group rounded-lg border border-border p-5 transition-all hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_8px_30px_-10px_hsl(var(--primary)/0.4)]"
+              >
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent text-primary transition-transform group-hover:scale-110">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="font-semibold">{s.name}</h3>
+                <p className="mt-1 text-xs text-muted-foreground">{s.items}</p>
+              </div>
+            );
+          })}
+        </div>
+      </Section>
+
       <Section id="resume" title="Resume">
         <div className="flex flex-col items-start gap-4 rounded-lg border border-border p-8">
           <p className="text-muted-foreground">Download a PDF copy of my full resume.</p>
