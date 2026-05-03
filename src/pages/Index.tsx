@@ -1,11 +1,37 @@
-import { ArrowDown, Download, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Cloud, GitBranch, Palette, Terminal, Layers } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 
+const skills = [
+  { name: "Frontend", icon: Code2, items: "React, Next.js, TypeScript, Tailwind" },
+  { name: "Backend", icon: Server, items: "Node.js, Express, NestJS, tRPC" },
+  { name: "Databases", icon: Database, items: "Postgres, MongoDB, Redis, Prisma" },
+  { name: "DevOps", icon: Cloud, items: "AWS, Docker, CI/CD, Vercel" },
+  { name: "Tools", icon: GitBranch, items: "Git, GitHub Actions, Jest, Vitest" },
+  { name: "Design", icon: Palette, items: "Figma, Design Systems, A11y" },
+  { name: "APIs", icon: Layers, items: "REST, GraphQL, WebSockets" },
+  { name: "Scripting", icon: Terminal, items: "Bash, Python, Automation" },
+];
+
 const projects = [
-  { name: "TaskFlow", desc: "Real-time collaborative task manager with WebSockets.", stack: "React · Node · Postgres", link: "#" },
-  { name: "DevNotes", desc: "Markdown-first note app with full-text search.", stack: "Next.js · Prisma · tRPC", link: "#" },
-  { name: "ShopLite", desc: "Headless e-commerce starter with Stripe checkout.", stack: "Remix · Stripe · Tailwind", link: "#" },
+  {
+    name: "TaskFlow",
+    desc: "Real-time collaborative task manager built for remote teams. Features live cursors, optimistic updates, drag-and-drop boards, and offline sync via service workers. Scaled to 10k concurrent users with WebSocket fan-out.",
+    stack: "React · Node · Postgres · Redis",
+    link: "#",
+  },
+  {
+    name: "DevNotes",
+    desc: "Markdown-first knowledge base with full-text Postgres search, bi-directional links, and a plugin system. Includes a CLI for local-first editing and Git-backed sync across devices.",
+    stack: "Next.js · Prisma · tRPC · Meilisearch",
+    link: "#",
+  },
+  {
+    name: "ShopLite",
+    desc: "Headless e-commerce starter with Stripe checkout, multi-currency support, and a customizable storefront. Ships with a CMS-ready product schema and edge-rendered product pages for sub-100ms TTFB.",
+    stack: "Remix · Stripe · Tailwind · Sanity",
+    link: "#",
+  },
 ];
 
 const experience = [
