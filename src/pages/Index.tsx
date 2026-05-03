@@ -64,7 +64,7 @@ const Index = () => {
           <div className="space-y-4 leading-relaxed text-muted-foreground md:col-span-2">
             <p>I build software that simplifies complex systems into intuitive, high-performance products. As a full-stack engineer, I design scalable backend architectures and data models while delivering fast, polished web and mobile interfaces.</p>
             <p>My current focus is on building systems that operate reliably at scale, with a growing interest in the intersection of Bitcoin and AI—particularly where decentralization meets intelligent automation.</p>
-            <p>Outside of engineering, I spend time playing tennis, reading, experimenting with coffee brewing, contributing to open source, and exploring different countries and cultures.</p>
+            <p>Outside of engineering, I spend time playing tennis, reading, coffee brewing, contributing to open source, and exploring different countries and cultures.</p>
           </div>
           <div className="flex items-start justify-center md:justify-end">
             <div className="h-60 w-60 overflow-hidden rounded-2xl border border-border/80 shadow-[0_16px_35px_-24px_hsl(var(--primary)/0.7)]">
