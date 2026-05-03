@@ -7,6 +7,7 @@ export const experience = [
     desc: `
 - Built scalable cross-platform mobile and web applications using React Native, React.js, and Node.js across domains including banking, fintech, social media, chat, e-commerce, and cryptocurrency
 - Managed a team of developers, including task assignment, progress tracking, and delivery coordination
+- Represented the organization and products at international conferences, delivering demos and engaging with developers, partners
 - Followed spec-driven development using SpecKit and OpenSpec for collaboration with autonomous AI agents
 - Built and deployed a Model Context Protocol (MCP) server enabling context-aware integration between AI models and external tools and data sources
 - Implemented CI/CD pipelines and designed scalable system architectures for reliable and efficient application delivery
