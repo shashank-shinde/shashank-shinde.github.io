@@ -35,9 +35,24 @@ const projects = [
 ];
 
 const experience = [
-  { role: "Senior Full Stack Developer", company: "Acme Corp", period: "2023 — Present", desc: "Leading a team building scalable SaaS products with React and Node." },
-  { role: "Full Stack Developer", company: "Northwind Labs", period: "2021 — 2023", desc: "Shipped customer-facing dashboards and internal tooling." },
-  { role: "Software Engineer Intern", company: "Initech", period: "2020 — 2021", desc: "Built REST APIs and contributed to design system." },
+  {
+    role: "Senior Full Stack Developer",
+    company: "Acme Corp",
+    period: "2023 — Present",
+    desc: "Leading a team of 6 engineers building a multi-tenant SaaS analytics platform. Architected the migration from a monolith to event-driven microservices, cutting p95 latency by 40%. Mentor junior devs and own the frontend performance and accessibility roadmap.",
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Northwind Labs",
+    period: "2021 — 2023",
+    desc: "Shipped customer-facing dashboards used by 50k+ monthly users and built the internal admin tooling that powers customer support. Introduced a shared design system in Storybook and led the adoption of TypeScript across the codebase.",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Initech",
+    period: "2020 — 2021",
+    desc: "Built REST APIs in Node.js for the billing service and contributed reusable React components to the company design system. Wrote integration tests that lifted coverage from 45% to 80% on the core checkout flow.",
+  },
 ];
 
 const education = [
