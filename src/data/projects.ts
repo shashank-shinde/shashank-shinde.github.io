@@ -50,7 +50,7 @@ export const projects = [
   {
     name: "ReviewDeDe",
     desc: "Short Films App, Movie Trailers & Reviews, Rewards, Contest & Coupons, Earning App",
-    stack: "Android · Spring Boot · AWS  ",
+    stack: "Android · Spring Boot · Microservices  ",
     link: "https://review-de-de.en.aptoide.com/app",
   },
 ] as const;
