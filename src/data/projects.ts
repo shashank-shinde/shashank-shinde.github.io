@@ -39,7 +39,7 @@ export const projects = [
     name: "GreenPages and E-Istiqlal",
     desc: "Super app built in partnership with DOKU, one of Indonesia's leading payment technology companies, for the largest mosque in Southeast Asia and the sixth-largest mosque in the world. Included Messenger, Zocial (an Instagram clone), and e-commerce features.",
     stack: "React Native · Node.js · AWS ",
-    link: "https://review-de-de.en.aptoide.com/app",
+    link: "https://www.youtube.com/watch?v=sTTxuG0cZB8",
   },
   {
     name: "BidMyListings",
