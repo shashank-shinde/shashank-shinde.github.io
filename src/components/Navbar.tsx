@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -17,7 +19,7 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <nav className="container flex h-16 items-center justify-between">
-        <a href="#" className="font-mono text-sm font-semibold tracking-tight text-foreground/90">
+        <a href="/" className="font-mono text-sm font-semibold tracking-tight text-foreground/90">
           &lt;dev/&gt;
         </a>
         <ul className="hidden items-center gap-8 md:flex">

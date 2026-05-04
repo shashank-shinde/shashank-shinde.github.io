@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Cloud, GitBranch, Send, Terminal, Layers, FlaskConical } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
@@ -27,7 +28,7 @@ const Section = ({ id, title, children }: { id: string; title: string; children:
   </section>
 );
 
-const Index = () => {
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -67,12 +68,14 @@ const Index = () => {
             <p>Outside of engineering, I spend time playing tennis, reading, coffee brewing, contributing to open source, and exploring different countries and cultures.</p>
           </div>
           <div className="flex items-start justify-center md:justify-end">
-            <div className="h-60 w-60 overflow-hidden rounded-2xl border border-border/80 shadow-[0_16px_35px_-24px_hsl(var(--primary)/0.7)]">
-              <img
+            <div className="relative h-60 w-60 overflow-hidden rounded-2xl border border-border/80 shadow-[0_16px_35px_-24px_hsl(var(--primary)/0.7)]">
+              <Image
                 src={profilePhoto}
                 alt="Portrait of Shashank Shinde"
-                className="h-full w-full object-cover object-center"
-                loading="lazy"
+                fill
+                className="object-cover object-center"
+                sizes="240px"
+                priority
               />
             </div>
           </div>
@@ -190,6 +193,4 @@ const Index = () => {
       </footer> */}
     </div>
   );
-};
-
-export default Index;
+}
