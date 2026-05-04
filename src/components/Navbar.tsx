@@ -7,12 +7,12 @@ import { ThemeToggle } from "./ThemeToggle";
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#resume", label: "Resume" },
+  { href: "/Shashank_Shinde_Resume.pdf", label: "Resume", newTab: true },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
-];
+] as const;
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -27,6 +27,7 @@ export const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
+                {...("newTab" in l && l.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="relative text-sm text-muted-foreground transition-colors hover:text-foreground after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
@@ -51,6 +52,7 @@ export const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
+                {...("newTab" in l && l.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 onClick={() => setOpen(false)}
                 className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
               >

@@ -41,8 +41,7 @@ export default function HomePage() {
           </p>
           <h1 className="text-5xl font-bold tracking-tight md:text-7xl">Shashank Shinde.</h1>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-muted-foreground md:text-5xl">
-            I design and build scalable systems for web and mobile platforms.
-          </h2>
+          I build scalable production systems at the intersection of Bitcoin and AI, intelligent agents, and web and mobile platform          </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
             Crafting high-performance mobile and web applications on top of scalable systems. Currently working at the intersection of design, engineering, Bitcoin, and AI.
           </p>
