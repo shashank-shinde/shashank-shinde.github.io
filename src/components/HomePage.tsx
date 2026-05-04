@@ -116,6 +116,7 @@ export default function HomePage() {
             <a
               key={p.name}
               href={p.link}
+              target="_blank"
               className="group rounded-xl border border-border/80 bg-card/65 p-6 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_16px_35px_-24px_hsl(var(--primary)/0.7)]"
             >
               <div className="mb-4 flex items-center justify-between">
