@@ -9,6 +9,9 @@ export const experience = [
 - Managed a team of developers, including task assignment, progress tracking, and delivery coordination
 - Represented the organization and products at international conferences, delivering demos and engaging with developers, partners
 - Followed spec-driven development using SpecKit and OpenSpec for collaboration with autonomous AI agents
+- Built a production-grade autonomous development system where AI agents independently plan, design, and ship code changes, eleminating engineering cycle time
+- Designed a multi-agent pipeline using OpenSpec with spec-driven development, enforcing structured planning (feature specs, design docs, checklists)
+- Developed agent context infrastructure (context maps, domain specs, architecture references) to improve output accuracy and reduce hallucination and context drift
 - Built and deployed a Model Context Protocol (MCP) server enabling context-aware integration between AI models and external tools and data sources
 - Implemented CI/CD pipelines and designed scalable system architectures for reliable and efficient application delivery
 - Developed custom JavaScript bridges to integrate native Android and iOS libraries with React Native
@@ -22,6 +25,17 @@ export const experience = [
 - Practiced test-driven development (TDD) using Jest
 - Implemented end-to-end and automation testing using Maestro, Detox, and Appium
 - Built a peer-to-peer messaging system using Holepunch protocols including Hyperswarm and Hypercore
+    `,
+  },
+  {
+    role: "Mentorship",
+    company: "Summer of Bitcoin",
+    website: "https://www.summerofbitcoin.org/",
+    period: "March 2022 — July 2022",
+    desc: `
+    - Mentored an intern in building applications on the Bitcoin Lightning Network using LND (Lightning Network Daemon)
+    - Guided end-to-end development including Lightning payments integration, wallet interactions, node management and building apps using React Native
+    - Conducted code reviews, debugging sessions, and architectural discussions to improve code
     `,
   },
   {
