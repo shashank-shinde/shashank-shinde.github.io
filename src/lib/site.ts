@@ -1,9 +1,15 @@
-/** Canonical site URL for metadata, OG tags, and absolute image URLs. Set NEXT_PUBLIC_SITE_URL on Vercel (e.g. https://yoursite.com). */
+/**
+ * Canonical site URL for metadata, OG tags, and absolute image URLs.
+ * Override with `NEXT_PUBLIC_SITE_URL` when you use a custom domain on Vercel.
+ */
+export const CANONICAL_SITE_URL = "https://shashank-shinde.vercel.app";
+
 export function getSiteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (explicit) return explicit.replace(/\/$/, "");
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL.replace(/^https?:\/\//, "")}`;
-  return "http://localhost:8080";
+  if (process.env.NODE_ENV === "development") return "http://localhost:8080";
+  return CANONICAL_SITE_URL;
 }
 
 export const siteConfig = {
