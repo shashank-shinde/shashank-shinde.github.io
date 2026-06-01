@@ -1,8 +1,5 @@
-"use client";
-
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
+import { Menu } from "lucide-react";
+import { ThemeToggleDeferred } from "./ThemeToggleDeferred";
 
 const links = [
   { href: "#about", label: "About" },
@@ -15,7 +12,6 @@ const links = [
 ] as const;
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <nav className="container flex h-16 items-center justify-between">
@@ -36,32 +32,28 @@ export const Navbar = () => {
           ))}
         </ul>
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <button
-            className="rounded-md p-2 transition-colors hover:bg-accent md:hidden"
-            onClick={() => setOpen((o) => !o)}
-            aria-label="Toggle menu"
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
+          <ThemeToggleDeferred />
+          <details className="relative md:hidden">
+            <summary className="list-none rounded-md p-2 transition-colors hover:bg-accent [&::-webkit-details-marker]:hidden">
+              <span className="sr-only">Toggle menu</span>
+              <Menu className="h-5 w-5" />
+            </summary>
+            <ul className="absolute right-0 top-12 z-20 min-w-40 rounded-lg border border-border/70 bg-background/95 p-2 shadow-lg backdrop-blur-sm">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    {...("newTab" in l && l.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="block rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       </nav>
-      {open && (
-        <ul className="container flex flex-col gap-3 pb-4 md:hidden">
-          {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                {...("newTab" in l && l.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                onClick={() => setOpen(false)}
-                className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
     </header>
   );
 };

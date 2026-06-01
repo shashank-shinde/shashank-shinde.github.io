@@ -74,7 +74,6 @@ export default function HomePage() {
                 fill
                 className="object-cover object-center"
                 sizes="240px"
-                priority
               />
             </div>
           </div>
