@@ -6,25 +6,30 @@ export const experience = [
     period: "May 2019 — Present",
     desc: `
 - Built scalable cross-platform mobile and web applications using React Native, React.js, and Node.js across domains including banking, fintech, social media, chat, e-commerce, and cryptocurrency
-- Managed a team of developers, including task assignment, progress tracking, and delivery coordination
-- Represented the organization and products at international conferences, delivering demos and engaging with developers, partners
+- Architected and developed AI solutions, Retrieval-Augmented Generation (RAG) chatbots, and AI-powered workflows, leveraging LangChain, LlamaIndex, LangGraph, and Large Language Models.
+- Integrated OpenAI, Anthropic, Groq, and Hugging Face models into production applications.
+- Designed and implemented AI backend services and APIs using Python and FastAPI, integrating semantic search, embeddings, prompt engineering, and vector databases such as Pinecone, MongoDB, and pgvector.
+- Built and deployed a Model Context Protocol (MCP) server enabling context-aware integration between AI models and external tools and data sources
 - Followed spec-driven development using SpecKit and OpenSpec for collaboration with autonomous AI agents
 - Built a production-grade autonomous development system where AI agents independently plan, design, and ship code changes, eleminating engineering cycle time
-- Designed a multi-agent pipeline using OpenSpec with spec-driven development, enforcing structured planning (feature specs, design docs, checklists)
+- Designed a multi-agent pipeline using OpenSpec with spec-driven development, enforcing structured planning (feature specs, design docs, checklists) and collaborated with AI-assisted development tools, GitHub Copilot, and Claude.
 - Developed agent context infrastructure (context maps, domain specs, architecture references) to improve output accuracy and reduce hallucination and context drift
-- Built and deployed a Model Context Protocol (MCP) server enabling context-aware integration between AI models and external tools and data sources
-- Implemented CI/CD pipelines and designed scalable system architectures for reliable and efficient application delivery
-- Developed custom JavaScript bridges to integrate native Android and iOS libraries with React Native
+- Developed responsive and high-performance web applications using React, Svelte, TypeScript, and modern frontend architectures
+- Built CI/CD pipelines using GitHub Actions to automate builds, testing, deployments, and release management.
+- Implemented custom native module integrations for Android and iOS using React Native bridges, TurboModules, and Rust FFI to deliver high-performance cross-platform functionality.
 - Generated Rust FFI bindings for Android and iOS to enable high-performance native module integration
 - Worked with Bitcoin technologies and protocols including RGB, Lightning Network, and Whirlpool, implementing crypto-enabled features in production applications
 - Implemented scalable state management using Redux, Redux Thunk, Redux Saga, and Zustand
 - Designed offline-first architectures using Realm, WatermelonDB, SQLite, and caching strategies
-- Integrated geolocation features using Google Location Services and Google Maps APIs
-- Built workflow automations for app builds, deployments, package publishing, and release management
+- Developed backend services in Rust using Tokio and asynchronous programming patterns to build high-performance applications and infrastructure services, like Watchtower and Orbis1
+- Implemented real-time features, including chat, notifications, and live data synchronization, using WebSockets and event-driven architectures.- Built workflow automations for app builds, deployments, package publishing, and release management
+- Built and maintained scalable RESTful backend APIs and microservices using Node.js, integrating third-party services, authentication systems: JWT and OAuth-based workflows, and payment gateways.
 - Managed end-to-end release cycles for Google Play Store and Apple App Store
 - Practiced test-driven development (TDD) using Jest
 - Implemented end-to-end and automation testing using Maestro, Detox, and Appium
 - Built a peer-to-peer messaging system using Holepunch protocols including Hyperswarm and Hypercore
+- Managed a team of developers, including task assignment, progress tracking, and delivery coordination
+- Represented the organization and products at international conferences, delivering demos and engaging with developers, partners
     `,
   },
   {

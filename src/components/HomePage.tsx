@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Cloud, GitBranch, Send, Terminal, Layers, FlaskConical } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Code2, Brain, Database, Server, Cloud, GitBranch, Send, Terminal, Layers, FlaskConical } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/photo.jpg";
@@ -17,6 +17,7 @@ const skillIcons = {
   FlaskConical,
   Layers,
   Terminal,
+  Brain
 } as const;
 
 const Section = ({ id, title, children }: { id: string; title: string; children: React.ReactNode }) => (
@@ -41,9 +42,10 @@ export default function HomePage() {
           </p>
           <h1 className="text-5xl font-bold tracking-tight md:text-7xl">Shashank Shinde.</h1>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-muted-foreground md:text-5xl">
-          I build scalable production systems at the intersection of Bitcoin and AI, intelligent agents, and web and mobile platform          </h2>
+            I build scalable production systems at the intersection of AI, Bitcoin, and web and mobile platforms.
+          </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Crafting high-performance mobile and web applications on top of scalable systems. Currently working at the intersection of design, engineering, Bitcoin, and AI.
+            Crafting high-performance web and mobile applications powered by scalable backend systems, AI-driven experiences and Bitcoin infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button className="shadow-[0_14px_30px_-20px_hsl(var(--primary)/0.75)]" asChild>
@@ -62,8 +64,8 @@ export default function HomePage() {
       <Section id="about" title="About">
         <div className="grid gap-8 rounded-2xl border border-border/70 bg-card/60 p-8 backdrop-blur-sm md:grid-cols-3">
           <div className="space-y-4 leading-relaxed text-muted-foreground md:col-span-2">
-            <p>I build software that simplifies complex systems into intuitive, high-performance products. As a full-stack engineer, I design scalable backend architectures and data models while delivering fast, polished web and mobile interfaces.</p>
-            <p>My current focus is on building systems that operate reliably at scale, with a growing interest in the intersection of Bitcoin and AI—particularly where decentralization meets intelligent automation.</p>
+            <p>I build software that simplifies complex systems into intuitive, high-performance products. As a Full-Stack Engineer, I design scalable backend architectures, APIs, and data models while delivering fast and reliable web and mobile experiences using Node.js, Python, React, React Native, and Rust.</p>
+            <p>My work spans blockchain, fintech, and Applied/Generative AI, with hands-on experience building Retrieval-Augmented Generation (RAG) applications, AI-powered workflows, Bitcoin wallet infrastructure and Lightning Network integrations. I enjoy solving problems where scalable systems, decentralization, and intelligent automation come together.</p>
             <p>Outside of engineering, I spend time playing tennis, reading, coffee brewing, contributing to open source, and exploring different countries and cultures.</p>
           </div>
           <div className="flex items-start justify-center md:justify-end">

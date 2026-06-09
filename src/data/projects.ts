@@ -1,5 +1,11 @@
 export const projects = [
   {
+    name: "Ask Keeper Concierge Bot",
+    desc: "RAG-powered AI concierge assistant using LLMs, semantic search, and automated workflow, enabling users to ask product-related questions, report bugs, and suggest features through natural conversations. Designed workflows to automatically transform chat interactions into structured issue tickets and feature requests, streamlining user feedback collection and product development.",
+    stack: "LangChain · LangGraph · RAG · FastAPI",
+    link: "https://github.com/KeeperCommunity/bitcoin-keeper/releases/tag/v2.5.13",
+  },
+  {
     name: "Orbis1 Accounts and Auth App",
     desc: "A modern financial platform built for fast-moving businesses and merchants to manage and transact in USDT globally. It simplifies receiving, storing, and transferring stablecoins with ease, eliminating the complexity of traditional payment systems.",
     stack: "React.js · React Native · MCP Server · WebSockets · AWS",
@@ -17,12 +23,12 @@ export const projects = [
     stack: "React Native · Node.js · PostgreSQL · Google Cloud Platform",
     link: "https://github.com/KeeperCommunity/bitcoin-keeper",
   },
-  {
-    name: "React Native RGB",
-    desc: "A React Native Turbo Module library for the Bitcoin RGB Protocol",
-    stack: "React Native · Swift · Kotlin  ",
-    link: "https://orbis-1.github.io/react-native-rgb/",
-  },
+  // {
+  //   name: "React Native RGB",
+  //   desc: "A React Native Turbo Module library for the Bitcoin RGB Protocol",
+  //   stack: "React Native · Swift · Kotlin  ",
+  //   link: "https://orbis-1.github.io/react-native-rgb/",
+  // },
   {
     name: "Hexa Pay",
     desc: "Lightning Network-enabled mobile client built using LND. Provides simple, instant bitcoin payments.",
