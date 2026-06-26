@@ -181,7 +181,7 @@ export default function HomePage() {
             <a href="mailto:shashank.shinde@live.com"><Mail className="mr-2 h-4 w-4" /> Say hello</a>
           </Button>
           <div className="mt-10 flex justify-center gap-6 text-muted-foreground">
-            <a href="https://github.com/cakesoft-shashank" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground"><Github className="h-5 w-5" /></a>
+            <a href="https://github.com/shashank-shinde" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground"><Github className="h-5 w-5" /></a>
             <a href="https://www.linkedin.com/in/shashank-shinde/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground"><Linkedin className="h-5 w-5" /></a>
             <a href="mailto:shashank.shinde@live.com" className="transition-colors hover:text-foreground"><Mail className="h-5 w-5" /></a>
             <a href="https://t.me/shashank_shinde" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground"><Send className="h-5 w-5" /></a>
